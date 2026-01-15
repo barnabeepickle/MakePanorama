@@ -8,6 +8,7 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.event.ClickEvent;
+import net.minecraftforge.client.settings.KeyConflictContext;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -35,7 +36,7 @@ public class RestorePanoramaMain {
         PANORAMA_DIR = new File(Minecraft.getMinecraft().gameDir, "panoramas");
         LOGGER.info("Created PANORAMA_DIR");
 
-        panoramaKeyBind = new KeyBinding("key." + Reference.MODID + ".take", Keyboard.KEY_F9, "key.category." + Reference.MODID);
+        panoramaKeyBind = new KeyBinding("key." + Reference.MODID + ".take", KeyConflictContext.IN_GAME, Keyboard.KEY_F9, "key.category." + Reference.MODID);
         LOGGER.info("Created panoramaKeyBind");
 
         ClientRegistry.registerKeyBinding(panoramaKeyBind);
@@ -46,11 +47,13 @@ public class RestorePanoramaMain {
     @SubscribeEvent
     public static void onClientTick(TickEvent.ClientTickEvent event) {
         if (event.phase == TickEvent.Phase.END) {
+            LOGGER.info(Reference.MOD_NAME + " TickEvent.ClientTickEvent in Phase.END has fired.");
             Minecraft client = Minecraft.getMinecraft();
             while (panoramaKeyBind.isPressed()) {
                 if (client.player != null && !client.isGamePaused()) {
                     PANORAMA_DIR.mkdirs();
 
+                    LOGGER.info("Attempting to take panorama screenshot, the game might freeze for a moment!");
                     ITextComponent feedbackMessage = takePanoramaScreenshots(client, PANORAMA_DIR);
 
                     if (feedbackMessage != null) {
@@ -61,7 +64,7 @@ public class RestorePanoramaMain {
         }
     }
 
-    // This code is inspired by the disabled panorama screenshot code in later versions of Minecraft
+    // This code is inspired by the "disabled" panorama screenshot code in later versions of Minecraft
     /**
      * Takes a panorama. The panorama is stored in the provided {@code dir}, it takes
      * and saves 6 screenshots of size {@code width} and {@code height}.
