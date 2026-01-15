@@ -54,6 +54,7 @@ public class RestorePanoramaMain {
                         PANORAMA_DIR.mkdirs();
 
                         LOGGER.info("Attempting to take panorama screenshot, the game might freeze for a moment!");
+                        client.player.sendMessage(new TextComponentTranslation("screenshot." + Reference.MODID + ".start"));
                         ITextComponent feedbackMessage = takePanoramaScreenshots(client, PANORAMA_DIR);
 
                         if (feedbackMessage != null) {
