@@ -50,6 +50,7 @@ public class MakePanoramaMod {
                 Minecraft client = Minecraft.getMinecraft();
                 while (panoramaKeyBind.isPressed()) {
                     if (client.player != null && !client.isGamePaused()) {
+                        //noinspection ResultOfMethodCallIgnored
                         PANORAMA_DIR.mkdirs();
 
                         LOGGER.info("Attempting to take panorama screenshot, the game might freeze for a moment!");
@@ -111,6 +112,7 @@ public class MakePanoramaMod {
             client.gameSettings.hideGUI = true;
 
             File subDirectory = new File(dir, "panorama_" + CustomScreenShotHelper.getTimeStamp());
+            //noinspection ResultOfMethodCallIgnored
             subDirectory.mkdir();
 
             ITextComponent text;
