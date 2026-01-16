@@ -28,13 +28,14 @@ public class CustomScreenShotHelper {
      * @param framebuffer The {@code Framebuffer} which the image should be take from.
      * @param downscaleFactor An integer amount the final image should be downscaled by.
      */
+    @SuppressWarnings("unused")
     public static void saveScreenshot(
             File directory,
             String name,
             Framebuffer framebuffer,
             int downscaleFactor
     ) {
-        saveScreenshot(directory, name, framebuffer.framebufferWidth, framebuffer.framebufferHeight, framebuffer, 1);
+        saveScreenshot(directory, name, framebuffer.framebufferWidth, framebuffer.framebufferHeight, framebuffer, downscaleFactor);
     }
 
     /**
@@ -43,6 +44,7 @@ public class CustomScreenShotHelper {
      * @param name The name of the screenshot PNG.
      * @param framebuffer The {@code Framebuffer} which the image should be take from.
      */
+    @SuppressWarnings("unused")
     public static void saveScreenshot(
             File directory,
             String name,
@@ -59,6 +61,7 @@ public class CustomScreenShotHelper {
      * @param height The {@code height} of the image to be saved.
      * @param framebuffer The {@code Framebuffer} which the image should be take from.
      */
+    @SuppressWarnings("unused")
     public static void saveScreenshot(
             File directory,
             String name,
