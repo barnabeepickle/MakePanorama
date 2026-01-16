@@ -1,4 +1,4 @@
-package com.github.barnabeepickle.restorepanorama;
+package com.github.barnabeepickle.makepanorama;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;

@@ -1,4 +1,4 @@
-package com.github.barnabeepickle.restorepanorama;
+package com.github.barnabeepickle.makepanorama;
 
 /**
  * Tags storage class, you can change at will

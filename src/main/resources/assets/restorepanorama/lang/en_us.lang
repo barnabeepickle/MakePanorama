@@ -1,7 +1,0 @@
-key.category.restorepanorama=Make Panorama
-
-key.restorepanorama.take=Take Panorama Screenshot
-
-screenshot.restorepanorama.start=Taking panorama screenshots...
-screenshot.restorepanorama.success=Saved panorama as %s
-screenshot.restorepanorama.failure=Could not save panorama: %s

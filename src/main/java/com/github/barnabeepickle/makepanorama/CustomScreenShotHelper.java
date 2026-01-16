@@ -1,4 +1,4 @@
-package com.github.barnabeepickle.restorepanorama;
+package com.github.barnabeepickle.makepanorama;
 
 import net.minecraft.client.shader.Framebuffer;
 import net.minecraft.util.ScreenShotHelper;
@@ -14,7 +14,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static com.github.barnabeepickle.restorepanorama.RestorePanoramaMain.LOGGER;
+import static com.github.barnabeepickle.makepanorama.RestorePanoramaMain.LOGGER;
 
 @SideOnly(Side.CLIENT)
 public class CustomScreenShotHelper {

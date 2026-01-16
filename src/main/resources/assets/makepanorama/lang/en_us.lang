@@ -1,0 +1,7 @@
+key.category.makepanorama=Make Panorama
+
+key.makepanorama.take=Take Panorama Screenshot
+
+screenshot.makepanorama.start=Taking panorama screenshots...
+screenshot.makepanorama.success=Saved panorama as %s
+screenshot.makepanorama.failure=Could not save panorama: %s
