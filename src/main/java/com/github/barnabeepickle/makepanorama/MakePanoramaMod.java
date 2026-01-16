@@ -23,7 +23,7 @@ import org.lwjglx.input.Keyboard;
 import java.io.File;
 
 @Mod(modid = Reference.MODID, name = Reference.MOD_NAME, version = Reference.VERSION, clientSideOnly = true)
-public class RestorePanoramaMain {
+public class MakePanoramaMod {
 
     public static final Logger LOGGER = LogManager.getLogger(Reference.MODID);
 

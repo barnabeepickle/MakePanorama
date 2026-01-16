@@ -14,7 +14,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static com.github.barnabeepickle.makepanorama.RestorePanoramaMain.LOGGER;
+import static com.github.barnabeepickle.makepanorama.MakePanoramaMod.LOGGER;
 
 @SideOnly(Side.CLIENT)
 public class CustomScreenShotHelper {
