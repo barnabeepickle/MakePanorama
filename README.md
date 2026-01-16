@@ -23,7 +23,7 @@ No external libraries are required at the moment.
  - **Convenient** : Outputs to `.minecraft/panoramas/panorama_TIMESTAMP` already with the correct file names for a resourcepack.
  - **High Res** : Panoramas are taken at `4096` x `4096` pixels and down scaled to `1024` x `1024` pixels for a nice crisp image.
 
-### Not Avaliable Yet
+### Features That Aren't Here
 
 At the moment there is no config file for setting the resolution or other options, this could be added in the future (especially if people download the mod) but is not yet a feature.
 
