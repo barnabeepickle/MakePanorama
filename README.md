@@ -4,6 +4,8 @@
 
 A simple Minecraft mod that adds the abilty to take high fidelity panorama screenshots to Minecraft 1.12.2
 
+[Modrinth](https://modrinth.com/mod/makepanorama)
+
 ## About
 
 I was inspired by another mod called [Panorama ScreenMake](https://modrinth.com/mod/panorama_screen), which uses Minecraft's built in panorama code.
